@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 @Component({
-  selector: 'my-app',
-  template: '<h1>Hello World</h1>'
+  selector: 'countdown-app',
+  templateUrl: '/app/app.html'
 })
 export class AppComponent { }
