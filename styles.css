@@ -36,7 +36,7 @@ header > button {
   flex-flow: row wrap;
 }
 
-.countdown {
+.event {
   position:relative;
   border: 1px solid #ffffff;
   border-radius: 10px;
@@ -44,7 +44,7 @@ header > button {
   margin:2em;
 }
 
-.countdown > button {
+.event > button {
   position:absolute;
   bottom:14px;
   right:12px;

@@ -3,45 +3,9 @@
     <button onclick="alert('Hello World');" title="Add countdown">+</button>
   </header>
   <div class="countdowns">
-    <div class="countdown">
-      <h1>Frankfurt-Marathon</h1>
-      <p>43 Tage, 17:04:33</p>
-      <button class="delete" onclick="alert('Delete me')" title="Delete this countdown"></button>
-    </div>
-    <div class="countdown">
-      <h1>Frankfurt-Marathon</h1>
-      <p>43 Tage, 17:04:33</p>
-      <button class="delete" onclick="alert('Delete me')" title="Delete this countdown"></button>
-    </div>
-    <div class="countdown">
-      <h1>Frankfurt-Marathon</h1>
-      <p>43 Tage, 17:04:33</p>
-      <button class="delete" onclick="alert('Delete me')" title="Delete this countdown"></button>
-    </div>
-    <div class="countdown">
-      <h1>Frankfurt-Marathon</h1>
-      <p>43 Tage, 17:04:33</p>
-      <button class="delete" onclick="alert('Delete me')" title="Delete this countdown"></button>
-    </div>
-    <div class="countdown">
-      <h1>Frankfurt-Marathon</h1>
-      <p>43 Tage, 17:04:33</p>
-      <button class="delete" onclick="alert('Delete me')" title="Delete this countdown"></button>
-    </div>
-    <div class="countdown">
-      <h1>Frankfurt-Marathon</h1>
-      <p>43 Tage, 17:04:33</p>
-      <button class="delete" onclick="alert('Delete me')" title="Delete this countdown"></button>
-    </div>
-    <div class="countdown">
-      <h1>Frankfurt-Marathon</h1>
-      <p>43 Tage, 17:04:33</p>
-      <button class="delete" onclick="alert('Delete me')" title="Delete this countdown"></button>
-    </div>
-
-    <div class="countdown">
-      <h1>Frankfurt-Marathon</h1>
-      <p>43 Tage, 17:04:33</p>
+    <div class="event" *ngFor="let event of events">
+      <h1>{{event.name}}</h1>
+      <p>{{event.timeRemaining}}</p>
       <button class="delete" onclick="alert('Delete me')" title="Delete this countdown"></button>
     </div>
   </div>
