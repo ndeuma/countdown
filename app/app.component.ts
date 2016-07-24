@@ -15,6 +15,7 @@ export class AppComponent {
 
   constructor(private ref: ChangeDetectorRef) {
     ref.detach();
+    // Update the component's view whenever the timer fires
     setInterval(() => {
       ref.detectChanges();
     }, 1000);
