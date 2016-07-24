@@ -31,7 +31,7 @@ header > button {
   font-size: 3em;
 }
 
-.countdowns {
+.events {
   display:flex;
   flex-flow: row wrap;
 }
@@ -56,7 +56,3 @@ button.delete {
   height:16px;
   background-image: url("/img/delete.png");
 }
- /*
-  * See https://github.com/angular/angular.io/blob/master/public/docs/_examples/styles.css
-  * for the full set of master styles used by the documentation samples
-  */
