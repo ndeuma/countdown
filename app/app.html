@@ -3,6 +3,7 @@
     <button (click)="addEvent()" title="Add event">+</button>
   </header>
   <div class="events">
+    <h1 *ngIf="events.length == 0">Click "+" to add an event</h1>
     <div class="event" *ngFor="let event of events">
       <h1>{{event.name}}</h1>
       <p>{{event.date | date:'dd.MM.y, HH:mm'}}</p>
