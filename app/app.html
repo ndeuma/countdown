@@ -1,12 +1,13 @@
 <div class="main">
   <header>
-    <button (click)="addEvent()" title="Add countdown">+</button>
+    <button (click)="addEvent()" title="Add event">+</button>
   </header>
   <div class="events">
     <div class="event" *ngFor="let event of events">
       <h1>{{event.name}}</h1>
       <p>{{event.date | date:'dd.MM.y, HH:mm:ss'}}</p>
-      <button class="delete" (click)="deleteEvent(event)" title="Delete this countdown"></button>
+      <p>{{event.timeRemaining}}</p>
+      <button class="delete" (click)="deleteEvent(event)" title="Delete this event"></button>
     </div>
   </div>
 </div>
