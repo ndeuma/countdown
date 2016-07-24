@@ -1,7 +1,9 @@
+$background-color: #4f86c6;
+$foreground-color: #ffffff;
 
 * {
-  background-color: #4f86c6;
-  color: #ffffff;
+  background-color: $background-color;
+  color: $foreground-color;
 }
 
 h1 {
@@ -18,11 +20,11 @@ header {
   height:4em;
   width: 100%;
   text-align:right;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid $foreground-color;
 }
 
 button {
-  color: #ffffff;
+  color: $foreground-color;
   border-width: 0px;
   cursor: pointer;
 }
@@ -38,7 +40,7 @@ header > button {
 
 .event {
   position:relative;
-  border: 1px solid #ffffff;
+  border: 1px solid $foreground-color;
   border-radius: 10px;
   padding:2em;
   margin:2em;
@@ -48,7 +50,7 @@ header > button {
   position:absolute;
   bottom:14px;
   right:12px;
-  background-color: #4f86c6;
+  background-color: $background-color;
 }
 
 button.delete {

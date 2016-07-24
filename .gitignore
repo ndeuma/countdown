@@ -1,4 +1,7 @@
 npm-debug.log
+.sass-cache
 app/**/*.js
-app/**/*.js.map
+css/**/*.css
+**/*.js.map
+**/*.css.map
 **/._*
