@@ -1,8 +1,11 @@
 import { Component, ChangeDetectorRef } from '@angular/core';
 import { Event } from './event';
+import { TimespanPipe } from './timespan.pipe';
+
 @Component({
   selector: 'countdown-app',
-  templateUrl: '/app/app.html'
+  templateUrl: '/app/app.html',
+  pipes: [TimespanPipe]
 })
 export class AppComponent {
   events = [
@@ -18,7 +21,7 @@ export class AppComponent {
   }
 
   addEvent() {
-    this.events.push(new Event("Jahresende", new Date(2016, 11, 31, 23, 59, 59)));
+    this.events.push(new Event("demnächst", new Date(2016, 6, 25, 12, 0, 0)));
   }
 
   deleteEvent(event:Event) {

@@ -5,8 +5,8 @@
   <div class="events">
     <div class="event" *ngFor="let event of events">
       <h1>{{event.name}}</h1>
-      <p>{{event.date | date:'dd.MM.y, HH:mm:ss'}}</p>
-      <p>{{event.timeRemaining}}</p>
+      <p>{{event.date | date:'dd.MM.y, HH:mm'}}</p>
+      <h2>{{event.timeRemaining | timespan:'Tag':'Tage'}}</h2>
       <button class="delete" (click)="deleteEvent(event)" title="Delete this event"></button>
     </div>
   </div>
