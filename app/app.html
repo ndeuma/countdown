@@ -5,7 +5,7 @@
   <div class="events">
     <div class="event" *ngFor="let event of events">
       <h1>{{event.name}}</h1>
-      <p>{{event.timeRemaining}}</p>
+      <p>{{event.date | date:'dd.MM.y, HH:mm:ss'}}</p>
       <button class="delete" (click)="deleteEvent(event)" title="Delete this countdown"></button>
     </div>
   </div>
